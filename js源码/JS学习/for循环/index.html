@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 10;
+        for(var i = 0; i < x; ++i) {
+            //重复执行的任务，循环体
+            console.log(i);
+        }
+        /* 循环打印出来1~9 */
+
+        var j = 0;
+        for(; j < 10; j++) {
+            console.log(j); //可读性差
+        }
+
+        for (var i = 1; i <= 10; i++) {
+            if(i % 2 == 0) {
+                console.log(i);
+            }
+        }
+    </script>    
+</body>
+</html>

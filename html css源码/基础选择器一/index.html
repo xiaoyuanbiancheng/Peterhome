@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*所有元素格式, 优先级最低, 初始化用*/
+        /*全局选择器*/
+        /**{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }  **/
+        /*元素选择器*/
+        p{
+            color: red;
+            font-size: 30px;
+        }
+        /*类选择器*/
+        .box{
+            width: 1000px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .ptext{
+            color: blue;
+            font-size: 20px;
+        }
+
+        .success{
+            font-weight: 700;
+            font-size: 1%;
+        }
+        
+                                            
+
+
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <h1>标题</h1>
+    <p>我是一行文本</p>
+    <div>
+        <p>我是div中的文本</p>
+        <p>我是div中的文本2</p>
+    </div>
+    <div class="box">
+        <h2 class="box-title">我是标题</h2>
+    </div>
+    <div class="box">
+        <p>我是div中的文本3</p>
+        <p>我是div中的文本4</p>
+    </div>
+    <p class="ptext success">我是一个类选择器的文本</p>
+
+    <!-- 类名不能以数字开头 -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3];
+        var arr1 = "Hello";
+        console.log(typeof arr);
+        // Array.isArray是否为数组，是的话可以
+        console.log(Array.isArray(arr));
+        console.log(Array.isArray(arr1));
+        //push方法用于在数组的末端添加一个或者多个元素
+        var arr1 = ["尚学堂", "itbaizhan"];
+        console.log(arr1);
+        arr1.push("hello", "尚学堂", "前端开发");
+        console.log(arr1);
+
+        // pop删除最后一个元素
+        console.log(arr1.pop()); //一个一个删除尾部元素
+        console.log(arr1);
+
+        //把数组还原为字符串
+        var arr2 = [10, 20, 30];
+        console.log(arr2.join("|")); 
+        console.log(arr2.join(""));
+        console.log(arr2.join("-"));
+
+        //数组方法concat 用于多个数组的合并
+        var arr3 = [10, 20,30];
+        var arr4 = [40, 50, 60];
+        console.log(arr3.concat(arr4));
+
+        var arr6 = [10, 20, 30, 40, 50, 60];
+        console.log(arr6.slice(2, 4));
+        
+    </script>
+</body>
+</html>

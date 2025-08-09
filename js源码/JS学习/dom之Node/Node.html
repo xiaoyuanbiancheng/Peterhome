@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "box">
+        <a href = "#">HelloA</a>
+        <p>HelloP</p>
+    </div>
+
+    <div id = "container">
+
+    </div>
+    <script>
+        var div = document.getElementById("box");
+
+        console.log(div.textContent);
+        div.textContent = "哈哈哈哈哈啊哈"; //可读可写
+
+        var container = document.getElementById("container");
+        //创建节点
+        var p = document.createElement("p");
+        p.innerHTML = "我是P标签";
+        p.setAttribute("class", "text");
+        container.appendChild(p);
+        console.log(p);
+    </script>
+</body>
+</html>

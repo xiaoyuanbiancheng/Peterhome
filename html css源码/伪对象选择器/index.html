@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::before {
+            content: "我在前面 ";
+            color: red;
+        }
+
+        ul li::after {
+            content: " 我在后面";
+            color: blue;
+        }
+
+        ul::before {
+            content: "列表开始 ";
+            color: green;
+        }
+
+        ul::after {
+            content: " 列表结束";
+            color: purple;
+        }
+
+        p::before{
+            content: "";
+            background-color: black;
+            padding-left: 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>杨幂</li>
+        <li>洋洋</li>
+        <li>杨紫</li>
+    </ul>
+
+    <p>新闻图片</p>
+</body>
+</html>

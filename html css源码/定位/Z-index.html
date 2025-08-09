@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        .box1{
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 3;
+        }
+        /* 谁大谁在上面 z-index*/
+        .box2{
+            background-color: red;
+            z-index: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <button id = "btn" >
+            按钮
+        </button>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        var container = document.querySelector(".container");
+        btn.onclick = function(){
+            console.log("onclick");
+            p= document.createElement("p");
+            p.innerHTML = "这是一个p标签";
+            container.appendChild(p);
+        }
+        btn.onclick = function() {
+            console.log("onclick");  //覆盖了，同样的事件只能添加一个
+        }
+    </script>
+</body>
+</html>

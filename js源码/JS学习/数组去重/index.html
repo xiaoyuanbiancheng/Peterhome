@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [10, 20, 30, 20];
+        //数组去重
+        function unique(arr) {
+            if(!Array.isArray(arr)) {
+                console.log("传入的参数有误");
+                return;
+            }
+            // 存储最终数据的数组
+            let res = [];
+            for(var i = 0; i < arr.length; i++) {
+                if(res.indexOf(arr[i]) == -1)  {  //index判断每一个元素是否存在，
+                    //等于-1不存在
+                    res.push(arr[i]);
+                }
+            }
+            return res;
+        }
+        console.log(unique(arr));
+
+        function unique() {
+            let uniqueArr = [...new Set(arr)];
+            return 
+        }
+
+        console.log(unique1(arr));
+
+        // 数组去重函数，使用set
+        function unique(arr) {
+            //1.创建一个set函数
+            
+        }
+    </script>
+</body>
+</html>

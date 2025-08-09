@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "box">
+
+    </div>
+
+    <script>
+        var box = document.getElementById("box");
+       // box.setAttribute(
+         //   "style",
+          //  "width: 100px; background-color: red; height: 100px;" 
+        //)
+        var divStyle = box.style;
+        divStyle.width = '200px';
+        divStyle.height = '200px';
+        divStyle.backgroundColor = 'blue';
+        divStyle.border = "10px solid #00ffff";
+
+        divStyle.cssText = "width: 200px; height: 200px; backgroudn-color: blue;     border: 20px solid #00ffff; "
+    </script>
+</body>
+</html>

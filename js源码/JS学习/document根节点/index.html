@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- document.getElementByTagName 返回一个类似数组的集合 -->
+    <div class = "box box1"></div>
+    <div class = "box2"></div>
+
+    <img name = "image" src ="" alt = "">
+    <img name = "image" src = "" alt = "">
+
+    <h3 id = "title">wooo</h3>
+
+    <script>
+        var divs = document.getElementsByTagName("div");
+        //innerHTML 给元素添加内容
+        console.log(divs[0].innerHTML = "Hello");
+
+        var box = document.getElementsByClassName("box1");
+        console.log(box);
+        box[0].innerHTML = "我是getElementByClassName方法";
+
+        var imgs = document.getElementsByName("image");
+        console.log(imgs);
+
+        var title = document.getElementById("title");
+        title.innerHTML = "我是标题";
+
+        /* 
+            在CSS中，匹配class用., 匹配id用的是#
+        */
+
+        var tit = document.querySelector("#title");
+        console.log(tit); //多个匹配返回第一个符合条件的
+
+        var divs = document.querySelectorALL(".box");
+        console.log(divs); //所有符合的都返回
+
+         
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "box" class = "box1">Hello Box</div>
+    <script>
+        var div = document.querySelector("div");
+        console.log(div.id);
+        div.id = "mybox";
+        // id属性可读可写
+        console.log(div.className);
+        div.className = "hellobox"; //class可 读可写
+
+        div.classList.add("hejjj");
+        div.classList.remove("hellobox");
+
+        console.log(div.innerHTML);
+        div.innerHTML = "这是一个新的box";
+        console.log(div.innerHTML);
+
+        console.log(div.innerText);
+        div.innerText = "Thank you 这是一个innerText文本";
+
+        div.innerHTML = "<a href='http://iwenwiki.com'>iwenwiki</a>";
+        //div.innerText = "<a href='http://iwenwiki.com'>iwenwiki</a>";
+    </script>
+</body>
+</html>

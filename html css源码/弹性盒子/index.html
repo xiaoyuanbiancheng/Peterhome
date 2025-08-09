@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1000px;
+            height: 1000px;  
+        }
+
+        .flex-container {
+            display: flex; /*默认水平方向摆放，弹性盒子模型*/
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; /* 垂直方向对齐方式 */
+            width: 1000px;
+            height: 1000px;
+            border: 2px solid #000;
+        }
+
+        .flex-container .flex-item {
+            width: 100px;
+            height: 100px;
+            color: grey;
+            font-size: 30px;
+        }
+
+        .flex-container .flex-item:nth-child(1) {
+            background-color: red;
+            /*flex-grow: 2; /*分配剩余空间*/
+            flex: 1;
+        }
+
+         .flex-container .flex-item:nth-child(2) {
+            background-color: green;
+            /*flex-grow: 1;*/
+            flex: 3;
+         }
+
+        .flex-container .flex-item:nth-child(3) {
+            background-color: blue;
+            /*flex-grow: 1;*/
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>弹性盒子布局</h1>
+        <p>这是一个使用弹性盒子布局的示例。</p>
+        <div class="flex-container">
+            <div class="flex-item">项目 1</div>
+            <div class="flex-item">项目 2</div>
+            <div class="flex-item">项目 3</div>
+        </div>
+    </div>
+</body>
+</html>

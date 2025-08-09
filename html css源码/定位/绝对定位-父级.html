@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*相对定位相对于父级元素进行定位，父级元素没有限制*/
+        /*绝对定位对于父级元素进行定位，前提是父级元素必须存在定位，如果不存在
+        ，则向上逐级寻找具有定位的元素，如果都没有，则是相对于浏览器进行定位*/
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 100px 100px;
+            position: relative;
+        
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 50px;
+        }
+
+        p{
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <p>Heloo</p>
+    <p>hhhhjh</p>
+    <p>hhhhjh</p>
+    <p>hhhhjh</p>
+    <p>hhhhjh</p>
+
+</body>
+</html>

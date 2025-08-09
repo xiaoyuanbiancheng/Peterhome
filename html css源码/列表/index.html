@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            /*list-style-type: url("./first-website/images/firefox-icon.png");  无序列表样式 */
+            list-style-image: url("../first-website/images/firefox-icon.png");
+        }
+
+        .ul1{
+            list-style-type: circle;
+            list-style-position: inside; /* 列表项标记的位置 */
+        }
+
+        ul {
+            list-style: circle outside url("./first-website/images/firefox-icon.png");
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        列表：
+        1. 无序列表
+        2. 有序列表
+        3. 定义列表
+        type属性：
+            可以修改有序和无序列表样式
+            注意：不推荐在html中修改样式，而是推荐使用css方式来修改样式
+    
+    -->
+
+    <ul class="ul1">
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+
+    <ul class="ul2">
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>     
+
+    <ul>
+
+    </ul>
+</body>
+</html>

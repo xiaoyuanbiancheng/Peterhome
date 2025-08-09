@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(!true);
+        console.log(!false);
+        console.log(true);
+
+        //以下取反都为true
+        console.log(!undefined);
+        console.log(!null);
+        console.log(!0);
+        console.log(!NaN);
+        console.log(!"");
+
+        //其余取反皆为false
+        console.log(!"Hello");
+
+        var num1 = 10;
+        var num2 = 20;
+        var num3 = 30;
+        var num4 = 40;
+        console.log(num1 < num2 && num3 > num4);
+
+        console.log(num1 < num2 || num3 > num4);
+    </script>
+</body>
+</html>

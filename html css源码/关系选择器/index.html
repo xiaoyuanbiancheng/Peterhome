@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            color: red; /* 列表项文字颜色 */
+        }
+
+        div>a{
+            color: orange;
+        }
+
+        h1+p {
+            color: blue; /* 相邻兄弟元素文字颜色 */
+        }
+
+        h3~p {
+            color: green; /* 通用兄弟元素文字颜色 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 后代选择器 -->
+     <ul>
+        <li>宝马</li>
+        <li>奔驰</li>
+        <li>奥迪</li>  
+     </ul>
+     <ol>
+        <li>特斯拉</li>
+        <li>蔚来</li>
+        <li>小鹏</li>
+     </ul>
+
+     <!-- 子代选择器 -->
+      <div>
+        <a href="#">子元素1</a>
+        <p><a href="#">孙元素</a></p>
+        <a href="#">子元素2</a>
+      </div>
+
+      <!-- 相邻兄弟选择器 -->
+       <h1>h1元素</h1>
+       <p>我是兄弟元素1</p>
+       <p>我是兄弟元素2</p>
+
+    <!-- 通用兄弟选择器 -->
+     <h3>我是标题3</h3>
+     <p>我是兄弟1</p>
+     <p>我是兄弟2</p>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 100;
+        var str = "hello";
+        //先进行自动类型转换，转成字符串，再拼接
+        console.log(num + str);
+        //自动类型转换成布尔值
+        var hello = "hello";
+        console.log(!hello);
+
+        var num = 100;
+        console.log( typeof Number(num));
+        console.log(typeof Number("ABC")); //转换不成的往往显示NAN
+        console.log(typeof Number(""));
+        console.log(typeof Number(true));
+
+        console.log(typeof String(123));
+        console.log(String(true));  // "true"
+        console.log(String(undefined));  // "undefined"
+
+        console.log(Boolean(123)); // true
+        console.log(typeof Boolean(null));
+
+        /*
+        Boolean(undefined) false
+        Boolean(null)  false
+        Boolean(0)   false
+        Boolean(NaN) false
+        Boolean('')  false
+        */
+    </script>
+    
+</body>
+</html>

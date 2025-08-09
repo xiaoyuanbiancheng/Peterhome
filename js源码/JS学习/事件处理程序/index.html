@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <button id = "btn" onclick="clickHandler()">
+            按钮
+        </button>
+    </div>
+
+    <script>
+        //var btn = document.getElementById("btn");
+        var container = document.querySelector(".container");
+        function clickHandler() {
+            var p = document.createElement("p");
+            p.setAttribute("class", "text");
+            p.innerHTML = "这是一个p标签";
+            console.log(p.innerHTML);
+            container.appendChild(p);
+            console.log("click");
+        }
+    </script>
+</body>
+</html>

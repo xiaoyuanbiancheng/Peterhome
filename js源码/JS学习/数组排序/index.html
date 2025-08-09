@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //冒泡排序
+        var arr = [8, 2, 6, 4, 5];
+        for(var i = 0; i < arr.length - 1; i++) {
+            console.log("比较轮次：" + (i+1));
+            for(var j = 0; j < arr.length - 1 - i; j++) {
+                if(arr[j] > arr[j+1]) //代表从小到大排序
+                    {
+                        var temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = temp;
+                    }
+                    console.log("比较轮次:" + (j+1), arr);
+            }
+            console.log("最终结果：" + arr);
+        }
+    </script>
+</body>
+</html>

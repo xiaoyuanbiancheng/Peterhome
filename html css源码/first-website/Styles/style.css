@@ -1,0 +1,13 @@
+p, .my-class, #my-id {
+    font-family : sans-serif;
+    color : red;
+    width : 500px;
+    border : 1px solid black;
+    padding : 10px;
+}
+
+li {
+    background-color: rgb(112, 113, 110);
+    border : 1px solid black;
+    margin-bottom : 5px;
+}

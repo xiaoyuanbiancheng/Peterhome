@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录表单</title>
+</head>
+<body>
+    <!-- placeholder给输入框增加一个占位符或者提示词 -->
+    <form action="/api/login" method="post">
+        <h2>账户登录</h2>
+        <label for="username">用户名：</label>
+        <input type="text" id="username" placeholder="手机号/邮箱" name="username" required>
+        <br><br>
+        <label for="password">密码：</label>
+        <input type="password" id="password" placeholder="密码" name="password" required>
+        <br><br>
+        <button type="submit">登录</button>
+        <!-- <input type="submit" value="登录"> -->
+    </form>
+</body>
+</html>

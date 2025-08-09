@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //就是一个字符串 string typeof判断数据类型
+        var str1 = "hello";
+        var str0 = 'world';
+        //单引2号双引号都可以， 可以互相嵌套
+        var str3 = "我的家在东北， 我叫李雷";
+        var str4 = '我的家在"东北"，我叫李雷';
+        console.log(str3, str4);
+
+        //错误示范
+        //var str5 = "我的"家在"东北";
+        var str10 = "我的\"家\"在东北";
+        console.log(str10);
+        
+        var str8 = "我的家在东北，我\n \r\t叫李雷";
+        console.log(str8);
+        console.log(str8.length); //每个空格也是一个字符
+    </script>
+</body>
+</html>

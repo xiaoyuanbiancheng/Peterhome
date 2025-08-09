@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 函数可以反复调用的代码块 -->
+    <!-- function命令声明的代码块 -->
+     <script>
+        //两个数相加
+        var num1 = 100;
+        var num2 = 100;
+        function add(a, b) {
+            if(typeof a == "number" && typeof b == "number") {
+             console.log(a + b);
+            } else {
+                console.log("数据类型有问题，不能相加");
+            }
+        }
+
+        add(num1, num2);
+
+        //第二种函数常见方式，但是在日常开发中我们推荐第一种方案
+        var print = function() {
+            console.log("print fun");
+        }
+
+        function sq(x, y) {
+            console.log(x * y);
+        }
+        //参数不同结果不同
+        sq(10, 20);
+        sq(20, 30);
+        //参数是入口，返回值作为出口
+        function getName(name) {
+            return "Hello, " + name;  //return后的语句不会被执行
+        }
+
+        var myname = getName("Tom");
+        console.log(myname);
+
+
+     </script>
+</body>
+</html>
